@@ -1,0 +1,38 @@
+//Variables
+@import "config/variables";
+@import "components/buttons";
+//Reutilizar código
+//Funciones
+//Definición de estilos
+$background:#f1f7ed;
+$fondosec:#07889b;
+$fondomenu:#373737;
+$boton:#07889b;
+$footer:#373737;
+$texto:#f1f7ed;
+$bgtarget:#66b9bf;
+
+*{margin: 0px;
+padding: 0px;}
+
+header{
+    background-color: $fondosec;
+    color: $texto;
+    display: flex;
+    flex-direction: row; 
+}
+
+ul{
+    background-color: $fondomenu;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+
+}
+
+footer div{
+    background-color:$fondomenu;
+    color: $texto;
+    display: flex;
+    flex-direction: row;
+}
