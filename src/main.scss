@@ -1,5 +1,6 @@
 //Variables
 @import "config/variables";
+//Componentes
 @import "components/buttons";
 //Reutilizar código
 
@@ -21,25 +22,6 @@ $bgtarget:#66b9bf;
 *{margin: 0px;
 padding: 0px;}
 
-header{
-    font-size: $fontsize;
-    background-color: $fondosec;
-    color: $texto;
-    display: flex;
-    flex-direction: row; 
-}
-
 ul{
-    background-color: $fondomenu;
-    display: flex;
-    flex-direction: column;
-    text-decoration: none;
-
-}
-
-footer div{
-    background-color:$fondomenu;
-    color: $texto;
-    display: flex;
-    flex-direction: row;
+    list-style: none;
 }

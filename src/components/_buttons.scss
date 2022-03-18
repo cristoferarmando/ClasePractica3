@@ -1,2 +1,61 @@
 //Estilos para botones
+@mixin setButton($name, $color){
 
+        border-color: $color;
+    &:hover{
+        background-color: $color;
+        color: $color;
+
+    }
+}
+
+.btn{
+    text-decoration: none;
+    border-width: 1px;
+    padding: 3px;
+    margin: 3px;
+
+    &:hover{
+        border-width: 0px;
+    }
+
+    & &-#{$primariolable}{
+    @include setButton($colorprimario);
+    }
+    & &-#{$warninglable}{
+        @include setButton($colorwarning);
+    }
+    & &-#{$dangerlable}{
+        @include setButton($colordanger);
+    }
+    & &-#{$sucesslable}{
+        @include setButton($sucess);
+    }
+    & &-#{$infolable}{
+        @include setButton($info);
+    }
+
+    //estilos de clases segun tonalidad
+    /*
+    & &-primario{
+        border-color: $colorprimario;
+
+        &:hover{
+            background-color: $colorprimario;
+            color: $colorprimario;
+        }
+    }
+    & &-warning{
+        border-color: $colorwarning;
+    }
+    & &-danger{
+        border-color: $colordanger;
+    }
+    & &-sucess{
+        border-color: $sucess;
+    }
+    & &-info{
+        border-color: $info;
+    }
+    */
+}

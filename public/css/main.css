@@ -1,42 +1,61 @@
+.btn {
+  text-decoration: none;
+  border-width: 1px;
+  padding: 3px;
+  margin: 3px;
+  border-color: blue;
+  /*
+    & &-warning{
+        @include setButton($colorwarning);
+    }
+    & &-danger{
+        @include setButton($colordanger);
+    }
+    & &-sucess{
+        @include setButton($sucess);
+    }
+    & &-info{
+        @include setButton($info);
+    }*/
+  /*
+    & &-primario{
+        border-color: $colorprimario;
+
+        &:hover{
+            background-color: $colorprimario;
+            color: $colorprimario;
+        }
+    }
+    & &-warning{
+        border-color: $colorwarning;
+    }
+    & &-danger{
+        border-color: $colordanger;
+    }
+    & &-sucess{
+        border-color: $sucess;
+    }
+    & &-info{
+        border-color: $info;
+    }
+    */
+}
+
+.btn:hover {
+  border-width: 0px;
+}
+
+.btn:hover {
+  background-color: blue;
+  color: blue;
+}
+
 * {
   margin: 0px;
   padding: 0px;
 }
 
-header {
-  font-size: 10px;
-  background-color: #07889b;
-  color: #f1f7ed;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
 ul {
-  background-color: #373737;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  text-decoration: none;
-}
-
-footer div {
-  background-color: #373737;
-  color: #f1f7ed;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  list-style: none;
 }
 /*# sourceMappingURL=main.css.map */
