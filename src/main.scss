@@ -2,7 +2,9 @@
 @import "config/variables";
 @import "components/buttons";
 //Reutilizar código
+
 //Funciones
+
 //Definición de estilos
 $background:#f1f7ed;
 $fondosec:#07889b;
@@ -12,10 +14,15 @@ $footer:#373737;
 $texto:#f1f7ed;
 $bgtarget:#66b9bf;
 
+//Fuentes tipograficas
+
+
+//
 *{margin: 0px;
 padding: 0px;}
 
 header{
+    font-size: $fontsize;
     background-color: $fondosec;
     color: $texto;
     display: flex;
