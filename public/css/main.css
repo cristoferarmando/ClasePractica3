@@ -77,6 +77,14 @@
           transform: translateX(-5px);
 }
 
+.card {
+  display: none;
+}
+
+.card:target {
+  display: inline-block;
+}
+
 .container {
   display: -webkit-box;
   display: -ms-flexbox;

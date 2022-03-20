@@ -13,7 +13,7 @@
     .btn-primario{
         color: $color;
         box-shadow: 2px 2px 3px 2px lighten($color, 20%);
-
+    
         &:hover{
             transform: translateX(-5px);
         }
@@ -35,3 +35,10 @@
     @include setCard($info);
 }
 
+.card{
+    display: none;
+
+    &:target{
+        display: inline-block;
+    }
+}
