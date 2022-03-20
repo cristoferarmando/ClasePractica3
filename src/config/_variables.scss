@@ -9,8 +9,11 @@ $colordark:black;
 $colorlight:white;
 
 //
-$primariolable:'colorprimario';
-$sucesslable:'colorsucess';
-$warninglable:'colorwarning';
-$infolable:'colorinfo';
-$dangerlable:'colordanger';
+$colorprimarioLabel:'colorprimario';
+$sucessLabel:'sucess';
+$colorwarningLabel:'colorwarning';
+$infoLabel:'info';
+$colordangerLabel:'colordanger';
+
+//
+$shadow: 2px 2px 5px 2px gray;

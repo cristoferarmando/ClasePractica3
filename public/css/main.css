@@ -1,43 +1,114 @@
+.card {
+  width: 45%;
+  padding: 5px;
+  -webkit-box-shadow: 2px 2px 5px 2px gray;
+          box-shadow: 2px 2px 5px 2px gray;
+  border-style: solid;
+  color: #000;
+  text-align: center;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 60%;
+  border: none;
+}
+
+.card .btn-primario {
+  color: blue;
+  -webkit-box-shadow: 2px 2px 3px 2px #6666ff;
+          box-shadow: 2px 2px 3px 2px #6666ff;
+}
+
+.card .btn-primario:hover {
+  -webkit-transform: translateX(-5px);
+          transform: translateX(-5px);
+}
+
+.card .btn-primario {
+  color: green;
+  -webkit-box-shadow: 2px 2px 3px 2px #00e600;
+          box-shadow: 2px 2px 3px 2px #00e600;
+}
+
+.card .btn-primario:hover {
+  -webkit-transform: translateX(-5px);
+          transform: translateX(-5px);
+}
+
+.card .btn-primario {
+  color: orange;
+  -webkit-box-shadow: 2px 2px 3px 2px #ffc966;
+          box-shadow: 2px 2px 3px 2px #ffc966;
+}
+
+.card .btn-primario:hover {
+  -webkit-transform: translateX(-5px);
+          transform: translateX(-5px);
+}
+
+.card .btn-primario {
+  color: Red;
+  -webkit-box-shadow: 2px 2px 3px 2px #ff6666;
+          box-shadow: 2px 2px 3px 2px #ff6666;
+}
+
+.card .btn-primario:hover {
+  -webkit-transform: translateX(-5px);
+          transform: translateX(-5px);
+}
+
+.card .btn-primario {
+  color: gray;
+  -webkit-box-shadow: 2px 2px 3px 2px #b3b3b3;
+          box-shadow: 2px 2px 3px 2px #b3b3b3;
+}
+
+.card .btn-primario:hover {
+  -webkit-transform: translateX(-5px);
+          transform: translateX(-5px);
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
 .btn {
   text-decoration: none;
   border-width: 1px;
+  border-style: solid;
   padding: 3px;
   margin: 3px;
-  border-color: blue;
+  border-radius: 5px;
+  -webkit-box-shadow: 2px 2px 5px 2px gray;
+          box-shadow: 2px 2px 5px 2px gray;
   /*
-    & &-warning{
+    &-colorprimario{
+        @include setButton($colorprimario);
+    }
+    &-colorwarning{
         @include setButton($colorwarning);
     }
-    & &-danger{
-        @include setButton($colordanger);
-    }
-    & &-sucess{
-        @include setButton($sucess);
-    }
-    & &-info{
-        @include setButton($info);
-    }*/
-  /*
-    & &-primario{
-        border-color: $colorprimario;
-
-        &:hover{
-            background-color: $colorprimario;
-            color: $colorprimario;
-        }
-    }
-    & &-warning{
-        border-color: $colorwarning;
-    }
-    & &-danger{
-        border-color: $colordanger;
-    }
-    & &-sucess{
-        border-color: $sucess;
-    }
-    & &-info{
-        border-color: $info;
-    }
+    &-colordanger{
+        @include setButton($colordanger); 
+    } 
     */
 }
 
@@ -45,9 +116,79 @@
   border-width: 0px;
 }
 
-.btn:hover {
+.btn-sucess {
+  border-color: green;
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+}
+
+.btn-sucess:hover {
+  background-color: green;
+  color: white;
+}
+
+.btn-info {
+  border-color: gray;
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+}
+
+.btn-info:hover {
+  background-color: gray;
+  color: white;
+}
+
+.btn-primario {
+  border-color: blue;
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+}
+
+.btn-primario:hover {
   background-color: blue;
-  color: blue;
+  color: white;
+}
+
+.btn-warning {
+  border-color: orange;
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+}
+
+.btn-warning:hover {
+  background-color: orange;
+  color: white;
+}
+
+.btn-danger {
+  border-color: Red;
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+}
+
+.btn-danger:hover {
+  background-color: Red;
+  color: white;
+}
+
+.btn-menu {
+  border-color: black;
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+  background-color: white;
+  border-radius: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.btn-menu:hover {
+  background-color: black;
+  color: white;
 }
 
 * {
@@ -55,7 +196,52 @@
   padding: 0px;
 }
 
+aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px;
+  padding: 25px;
+}
+
 ul {
   list-style: none;
+  margin: auto;
+  padding: 10px;
+}
+
+section {
+  margin: 40px;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,37 @@
+//placeholderselector
+%containerbase{
+    width: 45%;
+    padding: 5px;
+    box-shadow: 2px 2px 5px 2px gray;
+    border-style: solid;
+    color:#000;
+    text-align: center;
+}
+
+@mixin setCard ($color){
+    //nombre de la clase css concatenando selector padre
+    .btn-primario{
+        color: $color;
+        box-shadow: 2px 2px 3px 2px lighten($color, 20%);
+
+        &:hover{
+            transform: translateX(-5px);
+        }
+    }
+}
+
+
+.card{
+    @include setFlex (column, center);
+    //Extendiendo el estilo placeholder
+    @extend %containerbase;
+    width: 60%;
+    border: none;
+
+    @include setCard($colorprimario);
+    @include setCard($sucess);
+    @include setCard($colorwarning);
+    @include setCard($colordanger);
+    @include setCard($info);
+}
+

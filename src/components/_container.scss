@@ -1,0 +1,5 @@
+//contenedor base
+
+.container{
+    @include setFlex (row, space-evenly);
+}

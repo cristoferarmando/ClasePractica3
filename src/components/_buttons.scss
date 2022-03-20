@@ -1,61 +1,59 @@
 //Estilos para botones
-@mixin setButton($name, $color){
-
+@mixin setButton($color){
         border-color: $color;
+        transition: all 250ms ease-in-out;
+
     &:hover{
         background-color: $color;
-        color: $color;
-
+        color: $colorlight;
+  
     }
 }
 
 .btn{
     text-decoration: none;
     border-width: 1px;
+    border-style: solid;
     padding: 3px;
     margin: 3px;
+    border-radius: 5px;
+    box-shadow: $shadow;
 
     &:hover{
         border-width: 0px;
     }
-
-    & &-#{$primariolable}{
-    @include setButton($colorprimario);
+    /*
+    &-#{$colorprimarioLabel}{
+        @include setButton($colorprimario);
     }
-    & &-#{$warninglable}{
+    &-#{$colorwarningLabel}{
         @include setButton($colorwarning);
     }
-    & &-#{$dangerlable}{
-        @include setButton($colordanger);
-    }
-    & &-#{$sucesslable}{
+    &-#{$colordangerLabel}{
+        @include setButton($colordanger); 
+    } 
+    */
+    &-#{$sucessLabel}{
         @include setButton($sucess);
     }
-    & &-#{$infolable}{
+    &-#{$infoLabel}{
         @include setButton($info);
-    }
+    } 
+}
 
-    //estilos de clases segun tonalidad
-    /*
-    & &-primario{
-        border-color: $colorprimario;
-
-        &:hover{
-            background-color: $colorprimario;
-            color: $colorprimario;
-        }
-    }
-    & &-warning{
-        border-color: $colorwarning;
-    }
-    & &-danger{
-        border-color: $colordanger;
-    }
-    & &-sucess{
-        border-color: $sucess;
-    }
-    & &-info{
-        border-color: $info;
-    }
-    */
+.btn-primario{
+    @include setButton($colorprimario);
+}
+.btn-warning{
+    @include setButton($colorwarning);
+}
+.btn-danger{
+    @include setButton($colordanger);
+}
+.btn-menu{
+    @include setButton($colordark);
+    background-color:white;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: row;
 }
