@@ -39,46 +39,46 @@ Variables para estilos asociados al titulo: Listas y mapas
           transform: translateX(-5px);
 }
 
-.card .btn-sucess {
+.card .btn-primario {
   color: green;
   -webkit-box-shadow: 2px 2px 3px 2px #00e600;
           box-shadow: 2px 2px 3px 2px #00e600;
 }
 
-.card .btn-sucess:hover {
+.card .btn-primario:hover {
   -webkit-transform: translateX(-5px);
           transform: translateX(-5px);
 }
 
-.card .btn-warning {
+.card .btn-primario {
   color: orange;
   -webkit-box-shadow: 2px 2px 3px 2px #ffc966;
           box-shadow: 2px 2px 3px 2px #ffc966;
 }
 
-.card .btn-warning:hover {
+.card .btn-primario:hover {
   -webkit-transform: translateX(-5px);
           transform: translateX(-5px);
 }
 
-.card .btn-danger {
+.card .btn-primario {
   color: Red;
   -webkit-box-shadow: 2px 2px 3px 2px #ff6666;
           box-shadow: 2px 2px 3px 2px #ff6666;
 }
 
-.card .btn-danger:hover {
+.card .btn-primario:hover {
   -webkit-transform: translateX(-5px);
           transform: translateX(-5px);
 }
 
-.card .btn-info {
+.card .btn-primario {
   color: gray;
   -webkit-box-shadow: 2px 2px 3px 2px #b3b3b3;
           box-shadow: 2px 2px 3px 2px #b3b3b3;
 }
 
-.card .btn-info:hover {
+.card .btn-primario:hover {
   -webkit-transform: translateX(-5px);
           transform: translateX(-5px);
 }
@@ -134,7 +134,7 @@ Variables para estilos asociados al titulo: Listas y mapas
   border-color: green;
   -webkit-transition: all 250ms ease-in-out;
   transition: all 250ms ease-in-out;
-  color: darkcyan;
+  color: midnightblue;
 }
 
 .btn-sucess:hover {
@@ -146,7 +146,7 @@ Variables para estilos asociados al titulo: Listas y mapas
   border-color: gray;
   -webkit-transition: all 250ms ease-in-out;
   transition: all 250ms ease-in-out;
-  color: darkcyan;
+  color: midnightblue;
 }
 
 .btn-info:hover {
@@ -158,7 +158,7 @@ Variables para estilos asociados al titulo: Listas y mapas
   border-color: blue;
   -webkit-transition: all 250ms ease-in-out;
   transition: all 250ms ease-in-out;
-  color: darkcyan;
+  color: midnightblue;
 }
 
 .btn-primario:hover {
@@ -170,7 +170,7 @@ Variables para estilos asociados al titulo: Listas y mapas
   border-color: orange;
   -webkit-transition: all 250ms ease-in-out;
   transition: all 250ms ease-in-out;
-  color: darkcyan;
+  color: midnightblue;
 }
 
 .btn-warning:hover {
@@ -182,7 +182,7 @@ Variables para estilos asociados al titulo: Listas y mapas
   border-color: Red;
   -webkit-transition: all 250ms ease-in-out;
   transition: all 250ms ease-in-out;
-  color: darkcyan;
+  color: midnightblue;
 }
 
 .btn-danger:hover {
@@ -194,8 +194,7 @@ Variables para estilos asociados al titulo: Listas y mapas
   border-color: black;
   -webkit-transition: all 250ms ease-in-out;
   transition: all 250ms ease-in-out;
-  color: darkcyan;
-  background-color: turquoise;
+  color: midnightblue;
   border: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -218,8 +217,7 @@ Variables para estilos asociados al titulo: Listas y mapas
   border-color: black;
   -webkit-transition: all 250ms ease-in-out;
   transition: all 250ms ease-in-out;
-  color: darkcyan;
-  background-color: white;
+  color: midnightblue;
   border: none;
   display: -webkit-box;
   display: -ms-flexbox;
