@@ -1,3 +1,9 @@
+/**********************************************************
+Variables para estilos asociados al titulo: Listas y mapas
+***********************************************************/
+@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Paytone+One&display=swap");
 .card {
   width: 45%;
   padding: 5px;
@@ -33,46 +39,46 @@
           transform: translateX(-5px);
 }
 
-.card .btn-primario {
+.card .btn-sucess {
   color: green;
   -webkit-box-shadow: 2px 2px 3px 2px #00e600;
           box-shadow: 2px 2px 3px 2px #00e600;
 }
 
-.card .btn-primario:hover {
+.card .btn-sucess:hover {
   -webkit-transform: translateX(-5px);
           transform: translateX(-5px);
 }
 
-.card .btn-primario {
+.card .btn-warning {
   color: orange;
   -webkit-box-shadow: 2px 2px 3px 2px #ffc966;
           box-shadow: 2px 2px 3px 2px #ffc966;
 }
 
-.card .btn-primario:hover {
+.card .btn-warning:hover {
   -webkit-transform: translateX(-5px);
           transform: translateX(-5px);
 }
 
-.card .btn-primario {
+.card .btn-danger {
   color: Red;
   -webkit-box-shadow: 2px 2px 3px 2px #ff6666;
           box-shadow: 2px 2px 3px 2px #ff6666;
 }
 
-.card .btn-primario:hover {
+.card .btn-danger:hover {
   -webkit-transform: translateX(-5px);
           transform: translateX(-5px);
 }
 
-.card .btn-primario {
+.card .btn-info {
   color: gray;
   -webkit-box-shadow: 2px 2px 3px 2px #b3b3b3;
           box-shadow: 2px 2px 3px 2px #b3b3b3;
 }
 
-.card .btn-primario:hover {
+.card .btn-info:hover {
   -webkit-transform: translateX(-5px);
           transform: translateX(-5px);
 }
@@ -128,6 +134,7 @@
   border-color: green;
   -webkit-transition: all 250ms ease-in-out;
   transition: all 250ms ease-in-out;
+  color: darkcyan;
 }
 
 .btn-sucess:hover {
@@ -139,6 +146,7 @@
   border-color: gray;
   -webkit-transition: all 250ms ease-in-out;
   transition: all 250ms ease-in-out;
+  color: darkcyan;
 }
 
 .btn-info:hover {
@@ -150,6 +158,7 @@
   border-color: blue;
   -webkit-transition: all 250ms ease-in-out;
   transition: all 250ms ease-in-out;
+  color: darkcyan;
 }
 
 .btn-primario:hover {
@@ -161,6 +170,7 @@
   border-color: orange;
   -webkit-transition: all 250ms ease-in-out;
   transition: all 250ms ease-in-out;
+  color: darkcyan;
 }
 
 .btn-warning:hover {
@@ -172,6 +182,7 @@
   border-color: Red;
   -webkit-transition: all 250ms ease-in-out;
   transition: all 250ms ease-in-out;
+  color: darkcyan;
 }
 
 .btn-danger:hover {
@@ -183,8 +194,33 @@
   border-color: black;
   -webkit-transition: all 250ms ease-in-out;
   transition: all 250ms ease-in-out;
+  color: darkcyan;
+  background-color: turquoise;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.btn-menu:hover {
+  background-color: black;
+  color: white;
+}
+
+.btn-menu1 {
+  border-color: black;
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+  color: darkcyan;
   background-color: white;
-  border-radius: 5%;
+  border: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -194,9 +230,38 @@
           flex-direction: row;
 }
 
-.btn-menu:hover {
+.btn-menu1:hover {
   background-color: black;
   color: white;
+}
+
+.ttl {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.ttl-xl {
+  font-family: "Dela Gothic One";
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+.ttl-xm {
+  font-family: "Righteous";
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.ttl-xs {
+  font-family: "Paytone One";
+  font-size: 15px;
+  font-weight: 300;
 }
 
 * {

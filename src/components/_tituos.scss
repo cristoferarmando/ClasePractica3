@@ -1,0 +1,30 @@
+//Titulos estilos generales
+
+@mixin setTittle ($font, $ize, $weight) {
+    font-family: $font;
+    font-size: $ize;
+    font-weight: $weight;
+}
+
+.ttl{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-align: center;
+    width: fit-content;
+
+
+    &-xl{
+        @include setTittle('Dela Gothic One', nth($listfonts, 1), bolder);
+    }
+
+    &-xm{
+        @include setTittle('Righteous', nth($listfonts, 2), bold);
+    }
+
+    &-xs{
+        @include setTittle('Paytone One', nth($listfonts, 3), 300);
+    }
+
+
+}
